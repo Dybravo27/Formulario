@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="controlador" method="get" enctype="multipart/form-data">
+    <h1>FORMULARIO</h1>
+    <div>
+      <label for="Nombre">Ingrese su nombre</label>
+      <input type="text" name="Nombre" placeholder="Nombre" id="Nombre" autocomplete="off" minlength="10" maxlength="40"
+        required>
+    </div>
+    <div>
+      <label for="años">Edad de la persona</label>
+      <input type="number" name="años" id="años" placeholder="Ingrese su edad" step="1" min="0" autocomplete="off"
+        required>
+    </div>
+    <div>
+      <label for="email">Ingrese su correo</label>
+      <input type="text" name="email" id="email" placeholder="email" minlength="10" maxlength="30" autocomplete="off"
+        required>
+    </div>
+    <div>
+      <label for="telefono">Ingrese su numero de telefono</label>
+      <input type="text" name="telefono" id="telefono" autocomplete="off" required>
+    </div>
+    <div>
+      <label for="lugar">Ingrese donde vive</label>
+      <select name="lugar" id="lugar" required>
+        <option value="lugar0">Seleccione</option>
+        <option value="lugar1">Tejaditos</option>
+        <option value="lugar2" selected>La argentina</option>
+        <option value="lugar3">Quinta Granada</option>
+        <option value="lugar4">Miraflores</option>
+      </select>
+    </div>
+    <div>
+      <label>
+        Ingrese su estrato
+        <input type="radio" name="estrato">1
+      </label>
+      <label>
+        <input type="radio" name="estrato" checked>2
+      </label>
+      <label>
+        <input type="radio" name="estrato">3
+      </label>
+      <label>
+        <input type="radio" name="estrato">4
+      </label>
+      <label>
+        <input type="radio" name="estrato">5
+      </label>
+      <div>
+        <label>Seleccione los servicios que tiene:</label><br>
+        <label>
+          <input type="checkbox" name="servicio" checked>Agua <br>
+        </label>
+        <label>
+          <input type="checkbox" name="servicio" checked>Luz <br>
+        </label>
+        <label>
+          <input type="checkbox" name="servicio">Gas <br>
+        </label>
+        <label>
+          <input type="checkbox" name="servicio">Alcantarillado <br>
+        </label>
+        <label>
+          <input type="checkbox" name="servicio">Acueducto
+        </label>
+      </div><br>
+      <div>
+        <input type="file" accept=".png,.jpg" multiple>
+      </div>
+    </div>
+    <button type="submit">guardar</button>
+  </form>
+
+</body>
+
+</html>
